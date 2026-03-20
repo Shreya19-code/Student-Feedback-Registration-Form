@@ -5,19 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class formtest {
+public class FormTest {
 
     public static void main(String[] args) {
-
-        // 👉 IMPORTANT: Set path if needed
-        // System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
         try {
 
             // Open form
-            driver.get("http://127.0.0.1:5500/index.html");
+            driver.get("file:///C:/Users/Shreya/Desktop/Student-Feedback-Registration-Form/index.html");
             driver.manage().window().maximize();
 
             Thread.sleep(2000);
